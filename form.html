@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Form</title>
+    <style>
+        input:invalid{
+            border-color: red;
+        } 
+    </style>
 </head>
 <body>
-    <form>
-        First name: <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,}"><br>
-        Last name:<input type="text" id="lname" name="lname" pattern="[A-Za-z]{1,}" ><br><br>
-        Submit <input type="submit">
-        
+    <form class="border">
+    <div>
+        First name: <input type="text" name="fname" pattern="[A-Za-z]{1,}"> </br>
+    </div>
+    <div>
+        Last name: <input type="text" name="lname" pattern="[A-Za-z]{1,}"></br>
+    </div>
+        <input type="submit" value="Submit">
     </form>
-<script>
-    alert("Submitted!");
-</script>
+
 </body>
 </html>
